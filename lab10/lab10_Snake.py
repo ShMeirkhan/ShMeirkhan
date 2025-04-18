@@ -9,7 +9,7 @@ import time
 conn = psycopg2.connect(
     dbname='lab10',
     user='postgres',
-    password='1234',
+    password='postgres',
     host='localhost',
     port='5432'
 )
@@ -55,7 +55,7 @@ time.sleep(7)
 
 # Pygame параметрлері
 pygame.init()
-WIDTH, HEIGHT = 600, 400
+WIDTH, HEIGHT = 1000, 800
 GRID_SIZE = 20
 WHITE, GREEN, RED, BLACK = (255, 255, 255), (0, 255, 0), (255, 0, 0), (0, 0, 0)
 screen = pygame.display.set_mode((WIDTH, HEIGHT))
